@@ -7,7 +7,7 @@ const AlertComponent = () => {
   const {error, setError} = useContext(AppContext);
 
   return (
-    <div className='absolute inset-x-0 top-[120px]'>
+    <div className='absolute inset-x-0 top-[90px] md:top-[120px]'>
       <Collapse in={error}>
           <Alert
             severity="error"
