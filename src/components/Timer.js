@@ -22,6 +22,10 @@ const Timer = () => {
         setCounter(0);
       }
 
+      if (counter > 0) {
+        setError(false)
+      }
+
       if (counter % 2 == 0 && counter != 0) {
         setIsEven(true);
       } else {
@@ -30,10 +34,6 @@ const Timer = () => {
     }
 
     handleNumber()
-
-    console.log(counter);
-    console.log(isEven);
-
   }, [counter])
 
   return (

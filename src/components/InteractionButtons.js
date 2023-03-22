@@ -7,20 +7,48 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 const InteractionButtons = () => {
   const { 
     counter, setCounter,
-    // timerOn, setTimerOn,
   } = useContext(AppContext);
 
   return (
     <ButtonGroup
+      color="inherit"
       disableElevation
       variant="contained"
       aria-label="Disabled elevation buttons"
     >
-      <Button onClick={() => setCounter(counter - 1)}>
-        <RemoveCircleOutlineIcon />
+      <Button
+        sx={{
+          width: 100,
+          height: 50,
+          backgroundColor: '#93c249',
+          '&:hover, &.Mui-focusVisible': {
+            backgroundColor: '#339652',
+          },
+        }}
+        onClick={() => setCounter(counter - 1)}
+      >
+        <RemoveCircleOutlineIcon
+          sx={{
+            fill: '#fff'
+          }}
+        />
       </Button>
-      <Button onClick={() => setCounter(counter + 1)}>
-        <AddCircleOutlineIcon />
+      <Button
+        sx={{
+          width: 100,
+          height: 50,
+          backgroundColor: '#93c249',
+          '&:hover, &.Mui-focusVisible': {
+            backgroundColor: '#339652',
+          },
+        }}
+        onClick={() => setCounter(counter + 1)}
+      >
+        <AddCircleOutlineIcon
+          sx={{
+            fill: '#fff'
+          }}
+        />
       </Button>
     </ButtonGroup>
   )
