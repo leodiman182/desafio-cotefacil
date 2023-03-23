@@ -19,9 +19,9 @@ do React para passar dados de forma mais prática e dinâmica. Utilizei as cores
 Para rodar o projeto, é preciso:
 
 * Clonar o repositório
-* Instalar as dependências necessárias para rodar o projeto rodando o comando `npm install` no terminal
-* Rodar o projeto localmente rodando o comando `npm start`.
+* Instalar as dependências necessárias para iniciar o projeto rodando o comando `npm install` no terminal
+* Abrir o projeto localmente rodando o comando `npm start`.
 
 Além disso, para facilitar eu subi o projeto pelo Vercel - [Desafio Online](https://desafio-cotefacil.vercel.app/);
 
-Vou deixar também o link do meu [portfólio](https://portfolio-leodiman.vercel.app/), caso queira dar uma olhada
+Se houver interesse, aqui está o link do meu [portfólio](https://portfolio-leodiman.vercel.app/).
