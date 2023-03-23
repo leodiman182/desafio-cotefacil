@@ -1,0 +1,26 @@
+.custom-shape-divider-top-1679601766 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1679601766 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 20px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1679601766 .shape-fill {
+  fill: #93C249;
+}
+
+@media (min-width: 768px) {  
+  .custom-shape-divider-top-1679601766 {
+    top: 100px;
+  }
+}
