@@ -11,12 +11,16 @@ const Timer = () => {
   const { 
     counter, setCounter,
     isEven, setIsEven,
-    setError
-    // error, timerOn, setTimerOn, 
+    setError,
+    setWasTimerUsed
   } = useContext(AppContext);
 
   useEffect(() => {
     function handleNumber() {
+      if (counter == 0) {
+        setWasTimerUsed(false)
+      }
+
       if (counter < 0) {
         setError(true);
         setCounter(0);

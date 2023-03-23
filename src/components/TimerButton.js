@@ -1,4 +1,4 @@
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { useContext, useEffect, useRef } from "react";
 import AppContext from "../context/AppContext";
 import { yellow } from "@mui/material/colors";
@@ -20,7 +20,7 @@ const TimerButton = () => {
   }
 
   return (
-    <>
+    <Tooltip title="Start | Pause" placement="bottom" arrow>
       {
         timerOn ? (
           <IconButton
@@ -72,8 +72,8 @@ const TimerButton = () => {
             <AccessAlarmIcon fontSize="large" />
           </IconButton>
         )
-      }    
-    </>
+      }
+    </Tooltip>
   )
 }
 
