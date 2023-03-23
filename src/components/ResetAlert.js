@@ -4,7 +4,7 @@ import { useContext } from "react";
 import AppContext from "../context/AppContext";
 
 const ResetAlert = () => {
-  const { counter, setCounter } = useContext(AppContext);
+  const { counter, setCounter, setWasTimerUsed } = useContext(AppContext);
   return (
     <Fade in={counter}>
       <Tooltip title="Reset" placement="bottom" arrow>
@@ -19,7 +19,10 @@ const ResetAlert = () => {
               //   },
               // }}
               size="large"
-              onClick={() => setCounter(0)}
+              onClick={() => {
+                setWasTimerUsed(false)
+                setCounter(0)
+              }}
               >
               <RestartAltIcon fontSize="large" />
         </IconButton>
