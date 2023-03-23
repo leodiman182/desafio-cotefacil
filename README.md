@@ -12,7 +12,7 @@
 **Overview**
 
 Esse projeto foi desenvolvido para uma etapa do processo seletivo da empresa __Cotefácil__. As ferramentas utilizadas foram *ReactJS*, *TailwindCSS* e *Material UI*. Como de costume, utilizei a componentização do ReactJS para deixar as pastas e arquivos organizados. Separei pelos components que utilizei, como o Header, Footer, etc. Além disso, também utilizei Context
-do React para passar dados de forma mais prática e dinâmica. Utilizei as cores da identidade visual da __Cotefácil__ e prezei por uma UI limpa e intuitiva.
+do React para passar dados de forma mais prática e dinâmica. Utilizei as cores e fonte da identidade visual da __Cotefácil__ e prezei por uma UI limpa e intuitiva.
 
 **Instruções**
 
@@ -21,3 +21,7 @@ Para rodar o projeto, é preciso:
 * Clonar o repositório
 * Instalar as dependências necessárias para rodar o projeto rodando o comando `npm install` no terminal
 * Rodar o projeto localmente rodando o comando `npm start`.
+
+Além disso, para facilitar eu subi o projeto pelo Vercel - [Desafio Online](https://desafio-cotefacil.vercel.app/);
+
+Vou deixar também o link do meu [portfólio](https://portfolio-leodiman.vercel.app/), caso queira dar uma olhada
