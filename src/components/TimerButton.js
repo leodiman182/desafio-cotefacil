@@ -1,38 +1,53 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { IconButton } from "@mui/material";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef } from "react";
 import AppContext from "../context/AppContext";
 
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
 const TimerButton = () => {
-  const { timerOn, setTimerOn, counter, setCounter } = useContext(AppContext);
-  
-  useEffect(() => {
-    if (timerOn) {
-      console.log('contando')
-    } else {
-      console.log('parado')
-    }
-  }, [timerOn]);
+  const { timerOn, setTimerOn, setCounter } = useContext(AppContext);
+  const id = useRef()
 
-  function startTimer () {
-    setCounter(counter + 1);
-    setInterval(startTimer, 1000)
+  useEffect(() => {
+    return () => clearInterval(id.current)
+  }, []);
+
+  function handleTimer () {
+    id.current = setInterval(() => {
+      setCounter(prev => prev + 1);
+    }, 1000)
   }
 
   return (
-    <IconButton
-      aria-label="close"
-      color={timerOn? "success" : "alert"}
-      size="large"
-      onClick={() => {
-        setTimerOn(!timerOn);
-        setInterval(startTimer, 1000);
-      }}
-    >
-      <AccessAlarmIcon fontSize="large" />
-    </IconButton>
+    <>
+      {
+        timerOn ? (
+          <IconButton
+            aria-label="close"
+            color="success"
+            size="large"
+            onClick={() => {
+              setTimerOn(!timerOn)
+              clearInterval(id.current)
+            }}
+            >
+            <AccessAlarmIcon fontSize="large" />
+          </IconButton>
+        ) : (
+          <IconButton
+          aria-label="close"
+          color="alert"
+          size="large"
+          onClick={() => {
+              setTimerOn(!timerOn)
+              handleTimer()
+            }}
+          >
+            <AccessAlarmIcon fontSize="large" />
+          </IconButton>
+        )
+      }    
+    </>
   )
 }
 
