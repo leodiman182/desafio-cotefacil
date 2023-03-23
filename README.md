@@ -1,6 +1,6 @@
 <h1 align="center">Desafio para a empresa Cotefácil</h1>
 
-(https://cotefacil.online/wp-content/uploads/2021/09/logo_rodape_micro_cotefacil.png)
+![Logo da Cotefácil](https://cotefacil.online/wp-content/uploads/2021/09/logo_rodape_micro_cotefacil.png)
 
 > Desenvolvido por Leonardo Diman
 
