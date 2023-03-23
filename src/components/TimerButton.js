@@ -25,6 +25,13 @@ const TimerButton = () => {
           <IconButton
             aria-label="close"
             color="success"
+            sx={{
+              backgroundColor: '#339652',
+              color: '#fff',
+              '&:hover, &.Mui-focusVisible': {
+                backgroundColor: '#93c249',
+              },
+            }}
             size="large"
             onClick={() => {
               setTimerOn(!timerOn)
