@@ -41,8 +41,8 @@ const Timer = () => {
   }, [counter])
 
   return (
-    <div className={classNames(isEven ? "bg-primary border-primary" : "bg-white", "flex fle-col items-center justify-center text-center border-[4px] rounded-md w-[200px] h-[200px] mx-auto pt-[25px]")}>
-      <p className={classNames(isEven ? "text-white" : "text-gray-600", "text-[150px] md:text-[120px]")}>
+    <div className={classNames(isEven ? "bg-primary border-primary" : "bg-white", "flex fle-col items-center justify-center text-center border-[4px] rounded-md w-[125px] h-[125px] md:w-[200px] md:h-[200px] mx-auto pt-[25px]")}>
+      <p className={classNames(isEven ? "text-white" : "text-gray-600", "text-[100px] md:text-[120px]")}>
         {counter}
       </p>
     </div>

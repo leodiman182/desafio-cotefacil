@@ -13,19 +13,28 @@ function App() {
     <Header />
     <AlertComponent />
     <main className="main bg-slate-100 flex flex-col items-center justify-center">
-      <h2 className="font-bold text-primary text-center text-[20px] md:text-[24px] px-[20px] md:px-0 mb-[6px]">
-        Tente somar, subtrair, ligar ou pausar o cronômetro.
-      </h2>
-      <Stack direction='column' spacing={1} alignItems='center'>
-        <Stack direction='row' spacing={2}>
-          <TimerButton />
-          <ResetAlert />
-        </Stack>
-        <Timer />
-        <InteractionButtons />
-      </Stack>
+      <section className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-2 py-[50px]">
+        <aside className="col-span-2 md:col-span-1">
+          <Stack direction='column' spacing={2} alignItems='center'>
+            <h2 className="font-bold text-primary text-center text-[20px] md:text-[24px] px-[20px] py-[20px] md:hidden">
+              Tente somar, subtrair, ligar ou pausar o cronômetro.
+            </h2>
+            <Timer />
+            <InteractionButtons />          
+          </Stack>
+        </aside>
+        <article className="col-span-2 md:col-span-1 flex flex-col items-center justify-evenly">
+          <h2 className="font-bold text-primary text-center md:text-[24px] px-[75px] hidden md:block">
+            Tente somar, subtrair, ligar ou pausar o cronômetro.
+          </h2>
+          <div className="flex flex-row w-[250px] justify-evenly py-[20px] md:py-0">
+            <TimerButton />
+            <ResetAlert />
+          </div>
+        </article>
+      </section>
     </main>
-    <Footer />    
+    <Footer />
     </>
   );
 }

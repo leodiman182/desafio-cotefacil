@@ -24,7 +24,7 @@ const ResetAlert = () => {
                 setCounter(0)
               }}
               >
-              <RestartAltIcon fontSize="large" />
+              <RestartAltIcon sx={{ fontSize: "50px" }} />
         </IconButton>
       </Tooltip>
     </Fade>

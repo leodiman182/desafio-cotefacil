@@ -21,6 +21,12 @@
 
 @media (min-width: 768px) {  
   .custom-shape-divider-top-1679601766 {
+    top: 70px;
+  }
+}
+
+@media (min-width: 1280px) {  
+  .custom-shape-divider-top-1679601766 {
     top: 100px;
   }
 }

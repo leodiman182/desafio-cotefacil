@@ -20,6 +20,11 @@ code {
 
 @media (min-width: 768px) {  
   .main {
+    height: calc(100vh - 150px);
+  }
+}
+@media (min-width: 1280px) {  
+  .main {
     height: calc(100vh - 220px);
   }
 }

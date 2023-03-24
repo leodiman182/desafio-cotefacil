@@ -39,7 +39,7 @@ const TimerButton = () => {
               clearInterval(id.current)
             }}
             >
-            <AccessAlarmIcon fontSize="large" />
+            <AccessAlarmIcon sx={{ fontSize: "50px" }} />
           </IconButton>
         ) : !timerOn && wasTimerUsed ? (
           <IconButton
@@ -55,7 +55,7 @@ const TimerButton = () => {
                 handleTimer()
               }}
             >
-              <AccessAlarmIcon fontSize="large" />
+              <AccessAlarmIcon sx={{ fontSize: "50px" }} />
             </IconButton>
 
         ) : (
@@ -69,7 +69,7 @@ const TimerButton = () => {
               handleTimer()
             }}
           >
-            <AccessAlarmIcon fontSize="large" />
+            <AccessAlarmIcon sx={{ fontSize: "50px" }} />
           </IconButton>
         )
       }
